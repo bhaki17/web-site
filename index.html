@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angelo Del Piano | Web Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background: #222;
+            color: white;
+            padding: 20px 0;
+        }
+        nav {
+            background: #333;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        section {
+            padding: 40px 20px;
+        }
+        #portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .project-card {
+            background: white;
+            padding: 20px;
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        form input, form textarea, form button {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form button {
+            background: #222;
+            color: white;
+            cursor: pointer;
+        }
+        footer {
+            background: #222;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ciao, sono Angelo Del Piano</h1>
+        <p>Web Developer | HTML, CSS, JS</p>
+    </header>
+    
+    <nav>
+        <a href="#about">Chi Sono</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contattami</a>
+    </nav>
+    
+    <section id="about">
+        <h2>Chi Sono</h2>
+        <p>Sono un giovane sviluppatore web con passione per la programmazione e il design,amo programmare siti web e giochi 2d.<br>
+            non penso che lo sviluppo e la programmazione informatica siano solo una passione ma una necessità per chiunque ne abbia bisogno.<br>
+            ecco alcuni dei miei progetti per introdurre quello che so fare:
+        </p>
+    </section>
+    
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="project-card">
+            <h3>Progetto 1</h3>
+            <p>Descrizione del progetto.</p>
+        </div>
+        <div class="project-card">
+            <h3>Progetto 2</h3>
+            <p>Descrizione del progetto.</p>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contattami</h2>
+        <form action="send_email.php" method="post">
+            <input type="text" name="name" placeholder="Il tuo nome" required>
+            <input type="email" name="email" placeholder="La tua email" required>
+            <textarea name="message" placeholder="Il tuo messaggio"></textarea>
+            <button type="submit">Invia</button>
+        </form>
+        
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Angelo Del Piano - Tutti i diritti riservati.</p>
+    </footer>
+</body>
+</html>
